@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <style>
+      body {
+         margin: 0;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         line-height: 1.5em;
+      }
+
+      *, *:before, *:before {
+         box-sizing: border-box;
+      }
+
+      nav {
+         height: 80px;
+         background: rgb(10, 124, 255);
+         position: fixed;
+         z-index: 1;
+         top: 0;
+         left: 0;
+         width: 100%;
+         box-shadow: 0 5px 15px -4px blue;
+      }
+
+      header {
+         margin-top: 80px;
+         width: 100%;
+      }
+
+      header img {
+         width: 100%;
+         height: 400px;
+         object-fit: cover;
+      }
+
+      .wrapper {
+         max-width: 1200px;
+         padding: 30px 15px;
+         margin: 0 auto;
+         display: flex;
+      }
+
+      .content {
+         background: rgb(245, 246, 247);
+         padding: 50px;
+         border-left: 4px solid rgb(10, 124, 255);
+      }
+
+      .sidebar-column {
+         flex-basis: 350px;
+         width: 350px;
+         flex-shrink: 0;
+         margin-left: 25px;
+      }
+
+      #sticky-sidebar {
+         background: white;
+         box-shadow: 0 10px 25px -8px rgba(0, 0, 0, 0.3);
+         padding: 25px;
+      }
+
+      #sticky-sidebar hr {
+         border: none;
+         border-bottom: 1px solid lightgray;
+      }
+
+      small {
+         display: block;
+      }
+
+      footer {
+         height: 250px;
+         background: rgb(34, 34, 34);
+      }
+   </style>
+</head>
+<body>
+   <nav></nav>
+   <header>
+      <img src="https://picsum.photos/1920/400" alt="">
+   </header>
+   <div class="wrapper">
+      <div class="content">
+         <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ea quia voluptatibus eius veritatis corrupti id fugiat doloremque cupiditate laboriosam optio inventore asperiores tempore omnis possimus quam delectus, distinctio animi a nemo, earum minus in! Ad aspernatur autem, soluta, sunt cumque vel suscipit molestias harum nemo natus rerum facilis dolor. Dolores cumque rerum doloribus minima ipsum! Quos numquam unde facilis deleniti repellat id nobis quas assumenda sed eligendi, perferendis ullam ipsam. Eaque voluptas enim velit voluptatibus corrupti libero harum unde iure assumenda vitae. Cupiditate quisquam consequatur, facere ad expedita voluptas eveniet sunt incidunt optio iusto. Sunt, ex impedit exercitationem deserunt corrupti quae illum iste ipsum repellendus excepturi perspiciatis ullam perferendis facere vero totam animi officia voluptas enim ipsam, assumenda nobis libero expedita, nisi sit. Aperiam, quasi iste repellendus vero id ad dolore doloremque! Ratione, saepe. Modi optio placeat vero nulla illo autem! Ipsam ut totam blanditiis dolores dignissimos nulla dolorum repellendus dolor possimus inventore autem ex aspernatur quaerat aliquid quidem exercitationem at perferendis, sequi incidunt ea molestias id ducimus iusto distinctio! Consequuntur esse nobis alias ullam facere iste aliquam explicabo provident distinctio animi, nulla temporibus asperiores suscipit optio perferendis consectetur, reprehenderit excepturi omnis sit, quia praesentium eius deleniti. Rem, iusto.
+         </p>
+         <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ea quia voluptatibus eius veritatis corrupti id fugiat doloremque cupiditate laboriosam optio inventore asperiores tempore omnis possimus quam delectus, distinctio animi a nemo, earum minus in! Ad aspernatur autem, soluta, sunt cumque vel suscipit molestias harum nemo natus rerum facilis dolor. Dolores cumque rerum doloribus minima ipsum! Quos numquam unde facilis deleniti repellat id nobis quas assumenda sed eligendi, perferendis ullam ipsam. Eaque voluptas enim velit voluptatibus corrupti libero harum unde iure assumenda vitae. Cupiditate quisquam consequatur, facere ad expedita voluptas eveniet sunt incidunt optio iusto. Sunt, ex impedit exercitationem deserunt corrupti quae illum iste ipsum repellendus excepturi perspiciatis ullam perferendis facere vero totam animi officia voluptas enim ipsam, assumenda nobis libero expedita, nisi sit. Aperiam, quasi iste repellendus vero id ad dolore doloremque! Ratione, saepe. Modi optio placeat vero nulla illo autem! Ipsam ut totam blanditiis dolores dignissimos nulla dolorum repellendus dolor possimus inventore autem ex aspernatur quaerat aliquid quidem exercitationem at perferendis, sequi incidunt ea molestias id ducimus iusto distinctio! Consequuntur esse nobis alias ullam facere iste aliquam explicabo provident distinctio animi, nulla temporibus asperiores suscipit optio perferendis consectetur, reprehenderit excepturi omnis sit, quia praesentium eius deleniti. Rem, iusto.
+         </p>
+         <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ea quia voluptatibus eius veritatis corrupti id fugiat doloremque cupiditate laboriosam optio inventore asperiores tempore omnis possimus quam delectus, distinctio animi a nemo, earum minus in! Ad aspernatur autem, soluta, sunt cumque vel suscipit molestias harum nemo natus rerum facilis dolor. Dolores cumque rerum doloribus minima ipsum! Quos numquam unde facilis deleniti repellat id nobis quas assumenda sed eligendi, perferendis ullam ipsam. Eaque voluptas enim velit voluptatibus corrupti libero harum unde iure assumenda vitae. Cupiditate quisquam consequatur, facere ad expedita voluptas eveniet sunt incidunt optio iusto. Sunt, ex impedit exercitationem deserunt corrupti quae illum iste ipsum repellendus excepturi perspiciatis ullam perferendis facere vero totam animi officia voluptas enim ipsam, assumenda nobis libero expedita, nisi sit. Aperiam, quasi iste repellendus vero id ad dolore doloremque! Ratione, saepe. Modi optio placeat vero nulla illo autem! Ipsam ut totam blanditiis dolores dignissimos nulla dolorum repellendus dolor possimus inventore autem ex aspernatur quaerat aliquid quidem exercitationem at perferendis, sequi incidunt ea molestias id ducimus iusto distinctio! Consequuntur esse nobis alias ullam facere iste aliquam explicabo provident distinctio animi, nulla temporibus asperiores suscipit optio perferendis consectetur, reprehenderit excepturi omnis sit, quia praesentium eius deleniti. Rem, iusto.
+         </p>
+         <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ea quia voluptatibus eius veritatis corrupti id fugiat doloremque cupiditate laboriosam optio inventore asperiores tempore omnis possimus quam delectus, distinctio animi a nemo, earum minus in! Ad aspernatur autem, soluta, sunt cumque vel suscipit molestias harum nemo natus rerum facilis dolor. Dolores cumque rerum doloribus minima ipsum! Quos numquam unde facilis deleniti repellat id nobis quas assumenda sed eligendi, perferendis ullam ipsam. Eaque voluptas enim velit voluptatibus corrupti libero harum unde iure assumenda vitae. Cupiditate quisquam consequatur, facere ad expedita voluptas eveniet sunt incidunt optio iusto. Sunt, ex impedit exercitationem deserunt corrupti quae illum iste ipsum repellendus excepturi perspiciatis ullam perferendis facere vero totam animi officia voluptas enim ipsam, assumenda nobis libero expedita, nisi sit. Aperiam, quasi iste repellendus vero id ad dolore doloremque! Ratione, saepe. Modi optio placeat vero nulla illo autem! Ipsam ut totam blanditiis dolores dignissimos nulla dolorum repellendus dolor possimus inventore autem ex aspernatur quaerat aliquid quidem exercitationem at perferendis, sequi incidunt ea molestias id ducimus iusto distinctio! Consequuntur esse nobis alias ullam facere iste aliquam explicabo provident distinctio animi, nulla temporibus asperiores suscipit optio perferendis consectetur, reprehenderit excepturi omnis sit, quia praesentium eius deleniti. Rem, iusto.
+         </p>
+         <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ea quia voluptatibus eius veritatis corrupti id fugiat doloremque cupiditate laboriosam optio inventore asperiores tempore omnis possimus quam delectus, distinctio animi a nemo, earum minus in! Ad aspernatur autem, soluta, sunt cumque vel suscipit molestias harum nemo natus rerum facilis dolor. Dolores cumque rerum doloribus minima ipsum! Quos numquam unde facilis deleniti repellat id nobis quas assumenda sed eligendi, perferendis ullam ipsam. Eaque voluptas enim velit voluptatibus corrupti libero harum unde iure assumenda vitae. Cupiditate quisquam consequatur, facere ad expedita voluptas eveniet sunt incidunt optio iusto. Sunt, ex impedit exercitationem deserunt corrupti quae illum iste ipsum repellendus excepturi perspiciatis ullam perferendis facere vero totam animi officia voluptas enim ipsam, assumenda nobis libero expedita, nisi sit. Aperiam, quasi iste repellendus vero id ad dolore doloremque! Ratione, saepe. Modi optio placeat vero nulla illo autem! Ipsam ut totam blanditiis dolores dignissimos nulla dolorum repellendus dolor possimus inventore autem ex aspernatur quaerat aliquid quidem exercitationem at perferendis, sequi incidunt ea molestias id ducimus iusto distinctio! Consequuntur esse nobis alias ullam facere iste aliquam explicabo provident distinctio animi, nulla temporibus asperiores suscipit optio perferendis consectetur, reprehenderit excepturi omnis sit, quia praesentium eius deleniti. Rem, iusto.
+         </p>
+         <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ea quia voluptatibus eius veritatis corrupti id fugiat doloremque cupiditate laboriosam optio inventore asperiores tempore omnis possimus quam delectus, distinctio animi a nemo, earum minus in! Ad aspernatur autem, soluta, sunt cumque vel suscipit molestias harum nemo natus rerum facilis dolor. Dolores cumque rerum doloribus minima ipsum! Quos numquam unde facilis deleniti repellat id nobis quas assumenda sed eligendi, perferendis ullam ipsam. Eaque voluptas enim velit voluptatibus corrupti libero harum unde iure assumenda vitae. Cupiditate quisquam consequatur, facere ad expedita voluptas eveniet sunt incidunt optio iusto. Sunt, ex impedit exercitationem deserunt corrupti quae illum iste ipsum repellendus excepturi perspiciatis ullam perferendis facere vero totam animi officia voluptas enim ipsam, assumenda nobis libero expedita, nisi sit. Aperiam, quasi iste repellendus vero id ad dolore doloremque! Ratione, saepe. Modi optio placeat vero nulla illo autem! Ipsam ut totam blanditiis dolores dignissimos nulla dolorum repellendus dolor possimus inventore autem ex aspernatur quaerat aliquid quidem exercitationem at perferendis, sequi incidunt ea molestias id ducimus iusto distinctio! Consequuntur esse nobis alias ullam facere iste aliquam explicabo provident distinctio animi, nulla temporibus asperiores suscipit optio perferendis consectetur, reprehenderit excepturi omnis sit, quia praesentium eius deleniti. Rem, iusto.
+         </p>
+      </div>
+      <div class="sidebar-column">
+         <div id="sticky-sidebar">
+            <h1>Heading</h1>
+            <p>
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque vero eos nobis quia minus soluta aspernatur aliquam error possimus ea quibusdam itaque qui expedita laboriosam numquam dolores fugiat enim iure ducimus repellendus temporibus, ut iste veritatis! Laboriosam cupiditate hic nam ea repudiandae! Aliquid, id consequatur eum nulla quod temporibus corrupti provident illum itaque. Dicta necessitatibus quibusdam, consectetur aliquid ut ullam, ipsa quam repellendus accusantium aspernatur nam expedita sit assumenda. Nihil excepturi placeat magnam architecto beatae debitis? Sapiente illum non cupiditate fugit deserunt labore libero voluptas maxime eum quo, culpa debitis accusantium consectetur et. Labore, assumenda illo. Quis blanditiis in iure.
+            </p>
+         </div>
+
+         <h5>Other content</h5>
+         <small>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias enim dolorum maiores cupiditate, autem minima, earum repellat, laborum unde saepe laudantium sint non quidem amet quae deleniti tempore fugit? Repellat ex ipsam dicta molestias eveniet voluptatum at quidem hic maiores culpa voluptas quaerat ut, omnis eaque repudiandae esse cum illo.
+         </small>
+      </div>
+   </div>
+   <footer></footer>
+   <script>
+      document.addEventListener("DOMContentLoaded", function() {
+         var Sidebar = new StickySidebar({
+            el: '#sticky-sidebar', // Sticky element
+            mode: 'top',
+            includeTop: ['nav', 30], // Include top height or element height,
+            includeBottom: ['footer', 30], // Include bottom height or element height,
+            includeBefore: ['header', 30], // Include height of content before sidebar
+            includeAfter: ['h5', 'small', 'footer', 30], // Include height of content after sidebar
+            onMediaQuery: [1000]
+         });
+      });
+   </script>
+<script type="text/javascript" src="stickysidebar.js"></script></body>
+</html>
